@@ -77,9 +77,22 @@ namespace TestCSV
                 }
             }
 
+            string col1 = "";
+            string col2 = "";
+            string col3 = "";
+            string col4 = "";
+
             //string[,] values = LoadCsv(path);
 
-            //for (int r = 0; )
+            for (int r = 0; r < numRows; r++)
+            {
+                col1 = csvArray[r, 0].ToString();
+                col2 = csvArray[r, 1].ToString();
+                col3 = csvArray[r, 2].ToString();
+                col4 = csvArray[r, 3].ToString();
+
+                Console.WriteLine(col1 + ", " + col2 + ", " + col3 + ", " + col4 + ";");
+            }
 
             Console.WriteLine(csvArray[0, 0]);
             Console.WriteLine(csvArray[1, 1]);
